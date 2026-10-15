@@ -1,3 +1,27 @@
 [gd_scene format=3 uid="uid://b2wkfliujgs8m"]
 
+[ext_resource type="PackedScene" uid="uid://bf5o5vfhtomdr" path="res://scenes/player.tscn" id="1_o5qli"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_txhjb"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o5qli"]
+
 [node name="Main" type="Node2D" unique_id=1480849591]
+
+[node name="Player" parent="." unique_id=1462872276 instance=ExtResource("1_o5qli")]
+position = Vector2(558, 626)
+
+[node name="LeftBorder" type="StaticBody2D" parent="." unique_id=1406755607]
+
+[node name="LeftBorder" type="CollisionShape2D" parent="LeftBorder" unique_id=13134598]
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_txhjb")
+one_way_collision = true
+
+[node name="RightBorder2" type="StaticBody2D" parent="." unique_id=619591993]
+position = Vector2(1152, 0)
+
+[node name="RightBorder" type="CollisionShape2D" parent="RightBorder2" unique_id=206172239]
+rotation = -1.5707964
+shape = SubResource("WorldBoundaryShape2D_o5qli")
+one_way_collision = true
