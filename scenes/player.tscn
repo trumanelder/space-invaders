@@ -11,3 +11,6 @@ texture = ExtResource("1_3vyb7")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=890443793]
 polygon = PackedVector2Array(0, -9, -10, 2, -10, 8, 10, 8, 10, 1)
+
+[node name="ProjectileCooldown" type="Timer" parent="." unique_id=835396427]
+one_shot = true
