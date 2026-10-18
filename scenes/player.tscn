@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cyo0keyoutdv8" path="res://scripts/player.gd" id="1_g2els"]
 
 [node name="Player" type="CharacterBody2D" unique_id=1462872276]
+collision_layer = 2
 script = ExtResource("1_g2els")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2023878350]

@@ -7,6 +7,8 @@
 size = Vector2(2, 6)
 
 [node name="Projectile" type="Area2D" unique_id=2118341570]
+collision_layer = 8
+collision_mask = 4
 script = ExtResource("1_q3m7n")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1767360677]
@@ -17,4 +19,5 @@ shape = SubResource("RectangleShape2D_hyox5")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=73570618]
 
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
