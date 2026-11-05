@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bf5o5vfhtomdr" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://f7h5j22l48u7" path="res://scenes/projectile.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bmnsshbidjbrv" path="res://scenes/enemy.tscn" id="4_jyhfs"]
+[ext_resource type="PackedScene" uid="uid://4a4uouh8imcg" path="res://scenes/enemy_formation.tscn" id="5_tbgi4"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_txhjb"]
 
@@ -36,17 +37,6 @@ rotation = -1.5707964
 shape = SubResource("WorldBoundaryShape2D_o5qli")
 one_way_collision = true
 
-[node name="Enemy" parent="." unique_id=1754540008 instance=ExtResource("4_jyhfs")]
-position = Vector2(558, 552)
-
-[node name="Enemy2" parent="." unique_id=1714679095 instance=ExtResource("4_jyhfs")]
-position = Vector2(558, 552)
-
-[node name="Enemy3" parent="." unique_id=2032652572 instance=ExtResource("4_jyhfs")]
-position = Vector2(558, 552)
-
-[node name="Enemy4" parent="." unique_id=321419029 instance=ExtResource("4_jyhfs")]
-position = Vector2(558, 552)
-
-[node name="Enemy5" parent="." unique_id=1610311745 instance=ExtResource("4_jyhfs")]
-position = Vector2(558, 552)
+[node name="EnemyFormation" parent="." unique_id=1153544093 instance=ExtResource("5_tbgi4")]
+position = Vector2(544, 271)
+enemy_scene = ExtResource("4_jyhfs")

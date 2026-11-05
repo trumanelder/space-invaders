@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://4a4uouh8imcg"]
+
+[ext_resource type="Script" uid="uid://ba15le5xgati2" path="res://scripts/enemy_formation.gd" id="1_13dhl"]
+
+[node name="EnemyFormation" type="Node2D" unique_id=1153544093]
+script = ExtResource("1_13dhl")
